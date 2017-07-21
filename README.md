@@ -8,7 +8,7 @@
 
 Particle Cloud API Client for Elixir:
 
-This is an unofficial client for the [Particle IoT platform's HTTP API](https://docs.particle.io/reference/api/). 
+This is an unofficial client for the [Particle IoT platform's HTTP API](https://docs.particle.io/reference/api/).
 
 ## Usage
 
@@ -45,9 +45,7 @@ Create a module responsible for the handling of the events. Customize `handle_ev
 
 ```elixir
 defmodule MyApp.ParticleEventHandler do
-  alias Experimental.GenStage
   alias Particle.Stream
-
   use GenStage
 
   def start_link() do

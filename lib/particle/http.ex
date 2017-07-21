@@ -37,7 +37,7 @@ defmodule Particle.Http do
     request(:post, url, params)
   end
 
-  def stream(url, stream_to, timeout \\ @default_stream_timeout) do
+  def stream(url, stream_to, _timeout \\ @default_stream_timeout) do
     options = [
       {:stream_to, stream_to},
       {:async, :once},

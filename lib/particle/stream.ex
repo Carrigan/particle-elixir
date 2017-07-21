@@ -5,8 +5,6 @@ end
 
 defmodule Particle.Stream do
   require Logger
-
-  alias Experimental.GenStage
   alias Particle.Stream.Event
   alias Particle.Http
 
@@ -78,7 +76,7 @@ defmodule Particle.Stream do
     http_client.stop_async(ref)
   end
 
-  defp process_chunk(chunk, acc \\ %Event{}) do
+  defp process_chunk(chunk, acc) do
     cond do
       chunk == ""    ->
         acc

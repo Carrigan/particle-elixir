@@ -3,8 +3,8 @@ defmodule Particle.Mixfile do
 
   def project do
     [app: :particle,
-     version: "0.1.7",
-     elixir: "~> 1.3",
+     version: "0.1.8",
+     elixir: "~> 1.4",
      name: "Particle Api Client",
      source_url: "https://github.com/jeffutter/particle-elixir.ex",
      build_embedded: Mix.env == :prod,
@@ -31,7 +31,7 @@ defmodule Particle.Mixfile do
 
   defp deps do
     [
-      {:gen_stage, "~> 0.5"},
+      {:gen_stage, "~> 0.11"},
       {:hackney, "~> 1.6"},
       {:poison, "~> 2.2.0"},
       {:credo, "~> 0.4", only: [:dev, :test]},
